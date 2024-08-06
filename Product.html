@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./Product.css">
+</head>
+<body>
+
+    <nav>
+
+        <div id="LogoSection">   
+            <img src="./Media/ShopLogo.png">
+            <h2>SHOP.Io</h2>
+        </div>
+
+
+        <div id="SearchBar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+
+        <ul>
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./Product.html">Product</a></li>
+            <li>Treds</li>
+            <li>Others</li>
+            <li id = "Cart">
+                <img src="./Media/Cart.png" alt="">
+            </li>
+        </ul>
+
+    </nav>
+    <main>
+        <div id="ProductNav">
+            <div class="category-dropdown">
+                <select>
+                    <option value="">Select Category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="home">Home & Garden</option>
+                </select>
+            </div>
+            <div class="price-slider">
+                <input type="range" min="0" max="1000" value="500" class="slider" id="priceRange">
+                <p>Max Price: $<span id="priceValue"></span></p>
+            </div>
+            <div class="sort-dropdown">
+                <select>
+                    <option value="">Sort By</option>
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="rating">Customer Rating</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="ProductGrid">
+         <!-- Data From Js -->
+        </div>
+
+        <div id="Pagination">
+            <button class="page-btn">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">Next</button>
+        </div>
+    </main>
+    
+</body>
+
+<script src="./Product.js"></script>
+</html>
